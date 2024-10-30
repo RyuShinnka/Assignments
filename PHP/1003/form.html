@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会員登録申し込み画面</title>
+</head>
+<body>
+    <h1>会員登録申し込み画面</h1>
+    <form action="form.php" method="post">
+        名前：<input type="text" name="name"><br><br>
+        郵便番号：<input type="text" name="zipcode" size="6"><br>
+        住所：<input type="text" name="address" size="39"><br><br>
+        性別：<input type="radio" name="gender" value="男性">男性
+        <input type="radio" name="gender" value="女性">女性<br><br>
+        支払い方法：<select name="payment">
+            <option value="現金">現金</option>
+            <option value="クレジット">クレジット</option>
+            </select><br><br>
+        <input type=hidden name=age value=20>
+        <input type="submit" value="申し込み">
+    </form>
+</body>
+</html>

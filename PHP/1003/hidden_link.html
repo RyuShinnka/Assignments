@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hidden_link</title>
+</head>
+<body>
+    10をhiddenで送ります<br>
+    20をlinkで送ります<br>
+    <form action="hidden.php" method="post">
+        <input type=hidden name=a value=10>
+        <input type=submit value="hidden">
+        <hr>
+        <a href="link.php?b=20">Link</a>
+    </form>
+</body>
+</html>
