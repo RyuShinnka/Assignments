@@ -1,0 +1,18 @@
+/*                                                                                                                                                                                                       
+ *P-31　例題                                                                                                                                                                                        
+ *改行しない表示                                                                                                                                                                                
+ *作成日：2024年4月19日                                                                                                                                                                                               
+ *                                                                                                                                                                                                       
+ */                                                                                                                                                                                                      
+public class List1_03                                                                                                                                                                                    
+{                                                                                                                                                                                                        
+	public static void main(String[] args)                                                                                                                                                               
+	{                                                                                                                                                                                                    
+		//画面へ文字列を出力する                                                                                                                                                                                    
+		System.out.print("こんにちは私は\"劉\"です");                                                                                                                                                             
+		System.out.print("今日もよい\"天気\"です");                                                                                                                                                                  
+		System.out.println("今日の\n夕飯はなんだろな？");                                                                                                                                                                                      
+		System.out.println("イタリアン\tがいいなー！");                                                                                                                                                                                                 
+	}                                                                                                                                                                                                    
+}                                                                                                                                                                                                        
+                                                                                                                                                                                                         
