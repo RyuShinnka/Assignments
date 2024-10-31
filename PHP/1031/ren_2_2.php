@@ -46,7 +46,7 @@
             $world = array($kuni, $syuto);
             // count()はjavaの.lengthと同じ使い方
             for ($i = 0; $i < count($kuni); $i++) {
-                echo $kuni[$i] . "の首都は" . $syuto[$i] . "です。<br>";
+                echo $world[0][$i] . "の首都は" . $world[1][$i] . "です<br>";
             }
             ?>
         </b>
