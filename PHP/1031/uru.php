@@ -1,5 +1,5 @@
 <?php
-$uru = isset($_POST['year']) ? (int)$_POST['year'] : 0;
+$uru = (int)$_POST['year'];
 
 // うるう年のカウント
 $count = 0;
