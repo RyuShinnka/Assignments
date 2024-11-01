@@ -15,31 +15,38 @@
 //											
 import java.util.Scanner;
 public class Section8_02 {
-	// 配列に2の累乗を格納するメソッド
-	public static int[] generateArray(int n) {
+	// 引数で渡された値を累積的に掛け算した結果を配列に格納するメソッド
+    public static int[] pawer(int n) {
         int[] tbl = new int[10];
         
-        // 各要素にインデックス * nの結果を代入
-        for (int i = 0; i < tbl.length; i++) {
-            tbl[i] = i * n;
+        // 最初の要素は 0 に設定
+        tbl[0] = 0;
+
+        // 2番目の要素から n 倍を累積的に代入
+        if (tbl.length > 1) {
+            tbl[1] = n;
+        }
+
+        for (int i = 2; i < tbl.length; i++) {
+            tbl[i] = tbl[i - 1] * 2;
         }
         
         return tbl;
     }
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
         
-        System.out.print("配列に使用する値を入力してください: ");
-        int n = scanner.nextInt();
+        System.out.print("配列に使用する値を入力=>");
+        int n = s.nextInt();
         
-        int[] tbl = generateArray(n);
+        int[] tbl = pawer(n);
         
         System.out.println("結果の配列:");
         for (int value : tbl) {
             System.out.print(value + " ");
         }
         
-        scanner.close();
+        s.close();
     }
 }
