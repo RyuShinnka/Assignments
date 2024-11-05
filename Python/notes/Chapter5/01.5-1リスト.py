@@ -119,7 +119,7 @@ lst = [10, 3.14, 'abc']
 last = lst[len(lst)-1]
 print(last)  # 'abc'　最後の要素が取り出される
 
-# min()関数とmax()関数
+# min()関数とmax()関数　　P95
 # 要素の最小値・最大値の取得例
 numbers = [10, 30, 20, 15]
 min_num = min(numbers)
