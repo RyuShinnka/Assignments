@@ -24,14 +24,14 @@ print "空白をとる = $clean_str<br>";
 $str2 = "fine|cloudy|rainy";
 $array = explode("|", $str2);
 $str2 = implode(", ", $array);
-print "で結合 = $str2<br>";
+print ",で結合 = $str2<br>";
 
 // sprintf p134
 $val1 = 123.4;
-$val2 = sprintf("%05d", $val1);
+$val2 = sprintf("%03d", $val1);
 echo "%d は = $val2<br>";
-$val3 = sprintf("%5.1f", $val1);
-echo "%5.1f は = $val3<br>";
+$val3 = sprintf("%5.6f", $val1);
+echo "%f は = $val3<br>";
 $val4 = sprintf("%s", $val1);
 echo "%s は = $val4<br>";
 
@@ -46,10 +46,10 @@ print "mb_strlen= $length2 文字<br>";
 
 // strpos 位置を調べ p135
 $place = strpos("Hello World", "o", 2);
-echo "先頭から数えて = $place 番目<br>";
+echo "先頭から数えて $place 番目<br>";
 
 // substr p135
-$str = substr("Hello World", 7, 5);
+$str = substr("Hello World", 0, 7);
 echo "substrで0番目から7文字 = $str<br>";
 
 // list p135
