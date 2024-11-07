@@ -8,11 +8,11 @@
 <?php
 // require を使う
 require "yomikomi.php";
-print "yomikomi.phpの挿入・・・$a<br>";
+print "yomikomi.phpの挿入・・・$a<br> \n";
 
 // include を使う
-include "yomikomi2.php";
-print "yomikomi2.phpの挿入・・・$a<br>";
+include_once "yomikomi2.php";
+print "yomikomi2.phpの挿入・・・$a<br> \n";
 ?>
 </body>
 </html>
