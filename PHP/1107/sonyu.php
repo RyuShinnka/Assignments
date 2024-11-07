@@ -11,8 +11,8 @@ require "yomikomi.php";
 print "yomikomi.phpの挿入・・・$a<br>";
 
 // include を使う
-include "yomikomi.php";
-print "yomikomi.phpの挿入・・・$a<br>";
+include "yomikomi2.php";
+print "yomikomi2.phpの挿入・・・$a<br>";
 ?>
 </body>
 </html>
