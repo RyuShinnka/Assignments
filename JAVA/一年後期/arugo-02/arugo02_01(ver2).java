@@ -8,7 +8,12 @@ public class arugo02_01 {
 		System.out.print("STR[15]=");
     for(int i = str.length -1 ;i >=0 ;i--){
       System.out.print(str[i]+" ");
-    }
+      if(str[i] == 1) {
+	System.out.print("]");
+     }else {
+	System.out.print(",");
 	}
+    }
+}
 
 }
