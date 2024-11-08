@@ -11,9 +11,14 @@ public class arugo02_01 {
 			str[(str.length-1) - x] = temp;
 		}
 		System.out.println("逆順したSTRは:");
-		System.out.print("STR[15]=");
+		System.out.print("STR= [");
 		for (int i = 0; i<str.length;i++) {
-			System.out.print(str[i]+",");
+			System.out.print(str[i]);
+			if(str[i] == 1) {
+				System.out.print("]");
+			}else {
+				System.out.print(",");
+			}
 		}
 	}
 
