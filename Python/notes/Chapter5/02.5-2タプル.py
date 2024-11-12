@@ -3,7 +3,7 @@
 # 例えば、タプルのデータにdelやinsertメソッドなど、要素の変更を行おうとするとエラーが出力されます
 tpl = (10, 3.14, 'abc')
 tpl.insert(1, 'ABC')
-print(tpl)  # ttributeError: 'tuple' object has no attribute 'insert' タプルでは要素追加ができないというメッセージ
+print(tpl)  # attributeError: 'tuple' object has no attribute 'insert' タプルでは要素追加ができないというメッセージ
 
 # 5-2-2 タプル作成
 # 書式：　変数名＝（要素１,　要素２,　要素３,　...）
