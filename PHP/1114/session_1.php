@@ -5,13 +5,14 @@ session_start();
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>セッション</title>
+    <title>セッション管理</title>
 </head>
 <body>
-<?php
-// セッションの利用
-$_SESSION["suki"] = "プリン";
-?>
-<a href="session_2.php">セッションが渡っているか確認するページにジャンプ</a><br>
+    <?php
+        $_SESSION['bridge'] = 100;
+        $b = $_SESSION['bridge'];
+        print "ページ１の値は$bです。\n"
+    ?>
+    <p><a href="session_2.php">ページ２へ</a></p>
 </body>
 </html>
