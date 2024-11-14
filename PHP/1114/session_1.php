@@ -11,7 +11,7 @@ session_start();
     <?php
         $_SESSION['bridge'] = 100;
         $b = $_SESSION['bridge'];
-        print "ページ１の値は$bです。\n"
+        print "ページ１の値は $b です。\n";
     ?>
     <p><a href="session_2.php">ページ２へ</a></p>
 </body>
