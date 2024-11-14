@@ -9,8 +9,8 @@ session_start();
 </head>
 <body>
 <?php
-    $b = SESSION['brige'];
-    print "ページの値は $b です。\n"
+    $b = $_SESSION['bridge'];
+    print "ページの値は $b です。\n";
 ?>
 <p><a href="session_1.php">ページ１へ</a></p>
 </body>
