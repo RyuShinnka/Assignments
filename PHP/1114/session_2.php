@@ -9,9 +9,9 @@ session_start();
 </head>
 <body>
 <?php
-// セッションの利用
-echo "私が好きなのは " . $_SESSION["suki"] . " です♪<br>";
+    $b = SESSION['brige'];
+    print "ページの値は $b です。\n"
 ?>
-<a href="session_1.php">戻る</a>
+<p><a href="session_1.php">ページ１へ</a></p>
 </body>
 </html>
