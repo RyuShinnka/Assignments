@@ -15,6 +15,6 @@ public class List05_01 {
 		System.out.println("aのidの値は"+a.id);
 		System.out.println("aのnameの値は"+a.name);
 		System.out.println("bのidの値は"+b.id);
-		System.out.println("bのnameの値は"+a.name);
+		System.out.println("bのnameの値は"+b.name);
 	}
 }
