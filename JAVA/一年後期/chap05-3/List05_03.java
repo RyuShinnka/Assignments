@@ -18,7 +18,11 @@ public class List05_03 {
 		cards[2].name = "山田二郎";
 		
 		for(int i=0;i<cards.length;i++) {
-			System.out.println("cards["+i+"]のidは"+cards[i].id+"、nameは"+ cards[i].name);
+			if(cards[i] == null) {
+				System.out.println("cards["+i+"]は参照がありません");
+			}else {
+				System.out.println("cards["+i+"]のidは"+cards[i].id+"、nameは"+ cards[i].name);
+			}
 		}
 	}
 }
