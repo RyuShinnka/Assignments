@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* ==========================
+ページ共通設定
+============================= */
+:root{
+    --navy:#415570;
+    --orange:#ff8900;
+    --grey:#8d8d8d;
+    --blue:#305a91;
+    --li-color:#ececec;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    color: var(--navy);
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+    font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+    background-image: url(img/bg.png);
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    vertical-align: top;
+    /* 画像の下の隙間を消す */
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    padding-top: 20px;
+    margin-bottom: 39px;
+}
+
+a{
+    text-decoration: none;
+}
+h2{
+    margin-bottom: 39px;
+}
+footer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 39px;
+}
+/* ナビゲーション */
+
+nav ul{
+    display: flex;/* 横に並べる */
+    justify-content: center;/* flexを使った時の配置方法 */
+    gap: 60px;/* flexアイテムの間隔 */
+    padding: 15px 0px;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    background-color: var(--navy);
+    padding: 10px 39px;
+    border-radius: 25px;
+}
+
+nav a:hover {
+    background-color: var(--orange);
+}
+
+/* メインビジュアル */
+
+.banner img {
+    width: 100%;
+}
+
+.banner {
+    margin-bottom: 60px;
+}
+
+/* travel_guide.html */
+.guide-list {
+    display: flex;
+    flex-wrap: wrap;/* flex折り返し */
+    justify-content: center;
+    gap: 30px;/* flex横の間隔 */
+    row-gap: 30px;/* flex縦の間隔 */
+}
+.items{
+    background-color: white;
+    padding: 9px;
+    height: 350px;
+    width: 250px;
+}
+.items p{
+    text-align: center;
+}
+.items img:hover {
+    opacity: 0.7;/* 画像を透明にする */
+}
+
+/* souvenir.html */
+
+
+.souvenir-list{
+    width: 918px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 19px;
+    padding: 9px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.souvenir-list img{
+    border-radius: 5px;
+    max-width: 500px;
+    height: auto;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    text-align: left;
+    padding: 10px;
+}
+.content a{
+    color: var(--grey);
+}
+.content h3{
+    margin: 0;
+    margin-top: 10px;
+}
+.souvenir-link{
+    height: 39px;
+    width: 169px;
+    border: 1px solid var(--grey);
+    line-height: 39px;
+    text-align: center;
+    border-radius: 9px;
+}
+
+/* link.html */
+
+#link-list{
+    background-color: white;
+    display: flex;/* 横に並べる */
+    justify-content: center;/* flexを使った時の配置方法 */
+    gap: 60px;/* flexアイテムの間隔 */
+    padding: 15px 0px;
+    font-weight: bold;
+    flex-wrap: wrap;
+    border-radius: 9px;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom:29px ;
+}
+#link-list a {
+    color: var(--navy);
+}
+#link section{
+    background-color: white;
+    text-align: left;
+    padding: 29px;
+    margin-bottom:29px ;
+    max-width: 842px;
+    margin: 0 auto;
+    margin-bottom:29px ;
+    border-radius: 9px;
+}
+#link section a{
+    color: var(--blue);
+    font-weight: bold;
+}
+#link section li{
+    border-left: 3px var(--li-color) solid;
+    padding-left: 10px;
+}
