@@ -3,9 +3,9 @@ sum = 0
 count = 0
 print('scores',scores)
 for i in range(len(scores)):
-    sum += float(scores[i])
+    sum += scores[i]
     count += 1
-print('合計：',int(sum))
+print('合計：',sum)
 print('平均：',sum/count)
 
 
