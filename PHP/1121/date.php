@@ -28,8 +28,8 @@ echo date("Y年m月d日", $after_5day);
 echo "<br>";
 
 // 今日の曜日
-echo date("Y年m月d日", mktime(0, 0, 0, $m, 0, $y))
-echo "本日: " . $youbi[$w] . "曜日 <br>";
+echo date("Y年m月d日", mktime(0, 0, 0, $m, 0, $y));
+echo "<br>本日: " . $youbi[$w] . "曜日 <br>";
 ?>
 </body>
 </html>
