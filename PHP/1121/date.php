@@ -13,7 +13,7 @@ date_default_timezone_set('Asia/Tokyo');
 $youbi = array("日", "月", "火", "水", "木", "金", "土");
 
 // 今日の年月日と時刻を表示
-echo date("Y/m/d H:i:s") . "<br>";
+echo date("Y/m/d H:i:s <br>");
 echo "<br>";
 
 // 年月日それぞれを取得
@@ -28,6 +28,7 @@ echo date("Y年m月d日", $after_5day);
 echo "<br>";
 
 // 今日の曜日
+echo date("Y年m月d日", mktime(0, 0, 0, $m, 0, $y))
 echo "本日: " . $youbi[$w] . "曜日 <br>";
 ?>
 </body>
