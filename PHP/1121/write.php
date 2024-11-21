@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-<form method="post" action="5_write.php">
+<form method="post" action="read.php">
     <textarea name="mojiretu" cols="10" rows="5"></textarea>
     <input type="submit" value="送信">
 </form>
