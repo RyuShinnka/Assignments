@@ -1,14 +1,12 @@
 import java.util.Scanner;
 
-// クラス名：List05_Mon02
 public class List05_Mon02 {
     // メソッドの処理: 5人分の3教科の点数を表示する
     static void printScores(scores[] students) {
+    	System.out.println("---３教科の点数---");
         for (int i = 0; i < students.length; i++) {
-            System.out.println("学生 " + (i + 1) + " の点数:");
-            System.out.println("  Java: " + students[i].java);
-            System.out.println("  Python: " + students[i].py);
-            System.out.println("  アルゴリズム: " + students[i].arugo);
+//            System.out.println("学生 " + (i + 1) + " の点数:");
+            System.out.println(students[i].java+"  \t" + students[i].py+"  \t" + students[i].arugo);
         }
     }
 
@@ -33,6 +31,6 @@ public class List05_Mon02 {
         // 表示するメソッドを呼び出し
         printScores(students);
 
-        s.close(); // スキャナを閉じる
+        s.close();
     }
 }
