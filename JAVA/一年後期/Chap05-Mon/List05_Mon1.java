@@ -1,12 +1,4 @@
 import java.util.Scanner;
-
-// 各教科の点数 クラス
-class scores {
-    int java;
-    int py;
-    int arugo;
-}
-
 public class List05_Mon01 {
     // 合計と平均を計算するメソッド
     static void keisan(scores a) {
