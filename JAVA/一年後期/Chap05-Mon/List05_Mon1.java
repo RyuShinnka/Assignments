@@ -6,8 +6,8 @@ class scores{
 }
 
 public class List05_Mon01 {
-	static void keisan(int num1,int num2,int num3) {
-		int sum = num1+num2+num3;
+	static void keisan(scores a) {
+		int sum = a.java+a.py+a.arugo;
 		int avg = sum /3;
 		System.out.println("3教科の合計は："+sum);
 		System.out.println("3教科の平均は："+avg);
@@ -22,7 +22,7 @@ public class List05_Mon01 {
 		System.out.print("アルゴリズムの点数を入力＝＞");
 		a.arugo = s.nextInt();
 		
-		keisan(a.java,a.py,a.arugo);
+		keisan(a);
 		s.close();
 	}
 }
