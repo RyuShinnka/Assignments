@@ -15,16 +15,14 @@ public class List05_Mon01 {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		System.out.print("Javaの点数を入力＝＞");
-		scores java = new scores();
-		java.java = s.nextInt();
+		scores a = new scores();
+		a.java = s.nextInt();
 		System.out.print("Pythonの点数を入力＝＞");
-		scores python = new scores();
-		python.py = s.nextInt();
+		a.py = s.nextInt();
 		System.out.print("アルゴリズムの点数を入力＝＞");
-		scores arugo = new scores();
-		arugo.arugo = s.nextInt();
+		a.arugo = s.nextInt();
 		
-		keisan(java.java,python.py,arugo.arugo);
+		keisan(a.java,a.py,a.arugo);
 		s.close();
 	}
 }
