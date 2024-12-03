@@ -5,8 +5,8 @@
 # 	ｘがｙより小さい時は、総和を求め表示する
 
 # 入力
-x = int(input("xを入力=>"))
-y = int(input("yを入力=>"))
+x = int(input("xの値を入力=>"))
+y = int(input("yの値を入力=>"))
 
 # 処理
 if x > y:
