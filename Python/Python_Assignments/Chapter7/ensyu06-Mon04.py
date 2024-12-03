@@ -4,12 +4,11 @@
 # 	3から８までの総和であれば
 # 	3+4+5+6+7+8＝33
 
-# 3から８までの総和を計算する関数
-def sum(start, end):
-    total = 0
-    for i in range(start, end+1):
-        total += i
-    return total
-# 3から８までの総和を計算して表示する
-result = sum(3, 8)
-print("3から8までの総和は", result, "です。")
+total = 0
+for i in range(3, 9):
+    total += i
+    if i == 8:
+        print(str(i), "=", end=" ")
+    else:
+        print(str(i),"+", end=" ")
+print(total,end=" ")
