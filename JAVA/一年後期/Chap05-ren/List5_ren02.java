@@ -1,5 +1,3 @@
-package chap05_ren;
-
 public class List5_ren02 {
 	public static boolean ageCheck(Person p,int i) {
 		if(p.age > i) {
