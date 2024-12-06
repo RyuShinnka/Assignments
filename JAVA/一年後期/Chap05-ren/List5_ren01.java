@@ -1,4 +1,3 @@
-package chap05_ren;
 
 public class List5_ren01 {
 	public static void printInfo(Person p) {
