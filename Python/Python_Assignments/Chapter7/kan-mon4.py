@@ -15,4 +15,5 @@ def even_odd(TBL):
 # ---------メイン---------
 TBL = [20,60,50,10,70,30,90,100,85,65]
 # 関数を実行し、結果を出力
-print('TBLの偶数番地の値と奇数番地の値の合計は、', even_odd(TBL))
+print('TBLの偶数番地の値の合計は:', even_odd(TBL)[0])
+print('TBLの奇数番地の値の合計は:', even_odd(TBL)[1])
