@@ -1,8 +1,12 @@
+# 3の倍数をリストTBLから探して表示する関数
 def check3(TBL):
-    print('TBL中に３の倍数は：', end=" ")
-    for i in range(len(TBL)):
-        if TBL[i] % 3 == 0:
-            print(TBL[i], end=" ")
-
+    print('TBL中に３の倍数は：', end=" ")  # メッセージを表示
+    for i in range(len(TBL)):  # リストTBLの各要素に対してループ
+        if TBL[i] % 3 == 0:  # 要素が3の倍数かどうかを確認
+            print(TBL[i], end=" ")  # 3の倍数であれば表示
+# ---------メイン---------
+# 数値のリストTBLを定義
 TBL = [20, 60, 50, 10, 70, 30, 90, 100, 85, 65]
+
+# 関数check3を呼び出し、TBL中の3の倍数を表示
 check3(TBL)
