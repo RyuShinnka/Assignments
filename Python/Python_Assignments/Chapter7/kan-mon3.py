@@ -17,4 +17,4 @@ def find_max_min(TBL):
     return max, min
 # ---------メイン---------
 # 関数を実行し、結果を出力
-print("TBL[]の最大値と最小値は", find_max_min(TBL))
+print("TBL[]の最大値は", find_max_min(TBL)[0],'最小値は', find_max_min(TBL)[1],'です。')
