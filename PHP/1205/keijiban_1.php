@@ -5,8 +5,8 @@ if(file_exists('keijiban_1.txt')){ //keijiban_1.txt が存在するなら
     $ln = explode(",", $f[0]); //データを,で分割し、最初のデータ(No)を$ln に代入
     $no = sprintf("%03d", $ln[0]+1); //No に1を足し3桁に成型する
 }else{ // keijiban.txt が存在しないなら
-$f = array(); //データ配列だけつくる
-$no = "001"; //NO は 001 から始める
+    $f = array(); //データ配列だけつくる
+    $no = "001"; //NO は 001 から始める
 }
 if($_SERVER["REQUEST_METHOD"]=="POST"){ //ボタンが押されたとき
 if(!$_POST['name']){ //名前未入力ならば
@@ -17,13 +17,13 @@ $errMsg = '記事を入力してください'; // エラーメッセージを設
 }
 if(!$errMsg){ //エラーメッセージが設定されなかったら新規データを追加
 $free = preg_replace("/\n/","<BR>",$_POST['free']); //改行コードを<br>に置き換え
-$time = date("H:i:s"); //現在の時分秒を変数に入れる
+$time = date("Y-m-d H:i:s"); //現在の時分秒を変数に入れる
 $data= array($no, $_POST['name'], $free, $time);//4つのデータ No 名前 メッセージ 時間を配列へ
 $datag=implode(",", $data); //$data の内容を,で結合
 array_unshift($f,$datag."\n");//\n を付けて配列$f の先頭へ$datag を入れる
 $fp = fopen('keijiban_1.txt', 'w'); //書き込み用でファイルを開く
 foreach($f as $line)
-    fwrite($fp,$line); //ファイルに書き込み
+    fputs($fp,$line); //ファイルに書き込み
 fclose($fp); //閉じる
 header("Location:keijiban_1.php");//リロード時の再投稿を防ぐ。指定ファイルにリダイレクト
 exit;//終了
