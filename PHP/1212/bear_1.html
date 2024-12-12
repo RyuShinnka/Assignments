@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear_1</title>
+</head>
+<body>
+    <img src="BEAR1.jpg" alt="bear">
+    <form action="bear_2.php" method="post">
+        <p>【会員No】</p>
+        <input type="text" name="member_no">
+        <p>【お名前】</p>
+        <input type="text" name="name">
+        <p>【ご住所】</p>
+        <input type="text" name="address">
+        <p>【お住まいの地域】</p>
+        <select name="region">
+            <option value="" disabled selected>地域を選択してください</option>
+            <option value="0">関東・東北、800円</option>
+            <option value="1">中部・北陸、1000円</option>
+            <option value="2">関西・北海道、1500円</option>
+            <option value="3">中国・四国・九州、 2000円</option>
+        </select>
+        <p>【ご注文数量】おひとり様３体まで</p>
+        <label><input type="radio" name="qua" value="1">1体</label>
+        <label><input type="radio" name="qua" value="2">2体</label>
+        <label><input type="radio" name="qua" value="3">3体</label>
+        <p><input type="submit" value="買い物かごに入れておく"></p>
+    </form>
+
+</body>
+</html>
