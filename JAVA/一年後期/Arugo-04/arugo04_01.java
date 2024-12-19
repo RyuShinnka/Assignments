@@ -37,5 +37,6 @@ public class arugo04_01 {
         for (int i = 0; i < table.length; i++) {
             System.out.print(table[i] + " ");
         }
+        s.close();
     }
 }
