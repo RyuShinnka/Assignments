@@ -15,9 +15,9 @@
             <input type="checkbox" name="colors[]" value="黄">黄
         </p>
         <p>
-            <input type="checkbox" name="colors[]" value="緑">緑
-            <input type="checkbox" name="colors[]" value="紫">紫
-            <input type="checkbox" name="colors[]" value="白">白
+            <input type="checkbox" name="midori" value="緑">緑
+            <input type="checkbox" name="murasaki" value="紫">紫
+            <input type="checkbox" name="siro" value="白">白
         </p>
         <input type="submit" value="送信">
     </form>
