@@ -9,28 +9,30 @@ public class arugo04_04 {
         // 商品NOをキーボードから入力
         Scanner s = new Scanner(System.in);
         System.out.print("商品NOを入力してください: ");
-        int productNo = s.nextInt();
+        int num = s.nextInt();
 
         // 二分探索法
         int left = 0; // 左端
         int right = array.length - 1; // 右端
-        boolean found = false; // 検索結果フラグ
+        int idx = -1;
+        int index = 0;
         s.close();
-        while (left <= right) {
+        while (left <= right && idx == -1) {
             int mid = (left + right) / 2; // 中央のインデックス
-            if (array[mid] == productNo) {
-                System.out.println("商品NOの番地（添え字）: " + mid);
-                found = true;
-                break; // 見つかったら終了
-            } else if (array[mid] < productNo) {
+            if (num == array[mid]) {
+            	index = mid;
+                idx = array[mid];
+            } else if (num > array[mid]) {
                 left = mid + 1; // 探索範囲を右側に絞る
             } else {
                 right = mid - 1; // 探索範囲を左側に絞る
             }
         }
 
-        if (!found) {
+        if (idx == -1) {
             System.out.println("入力エラー");
+        }else {
+        	System.out.println("商品NOの番地（添え字）: " + index);
         }
     }
 }

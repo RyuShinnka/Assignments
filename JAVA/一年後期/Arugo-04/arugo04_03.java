@@ -12,15 +12,14 @@ public class arugo04_03 {
         // 出席番号をキーボードから入力
         Scanner s = new Scanner(System.in);
         System.out.print("出席番号を入力してください: ");
-        int inputNumber = s.nextInt();
-
+        int input = s.nextInt();
+        s.close();
         // シーケンシャルサーチ
-        for (int i = 0; i < table.length; i++) {
-            if (table[i] == inputNumber) {
-                System.out.println("出席番号 " + inputNumber + " の名前は " + array[i] + " です。");
-                return; // 見つけたら終了
+        for (int idx = 0; idx < table.length; idx++) {
+            if (table[idx] == input) {
+                System.out.println("出席番号 " + input + " の名前は " + array[idx] + " です。");
             }
         }
-        s.close();
+        
     }
 }

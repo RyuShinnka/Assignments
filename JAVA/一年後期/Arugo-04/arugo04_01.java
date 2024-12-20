@@ -20,16 +20,16 @@ public class arugo04_01 {
 
         // 単純選択法で昇順ソート
         for (int i = 0; i < table.length - 1; i++) {
-            int minIndex = i; // 最小値のインデックスを記録
+            int idxMin = i; // 最小値のインデックスを記録
             for (int j = i + 1; j < table.length; j++) {
-                if (table[j] < table[minIndex]) {
-                    minIndex = j; // より小さい値が見つかれば更新
+                if (table[j] < table[idxMin]) {
+                    idxMin = j; // より小さい値が見つかれば更新
                 }
             }
             // 最小値と現在の位置を交換
-            int temp = table[i];
-            table[i] = table[minIndex];
-            table[minIndex] = temp;
+            int valueMin = table[idxMin];
+            table[idxMin] = table[i];
+            table[i] = valueMin;
         }
 
         // ソート後の配列を表示
