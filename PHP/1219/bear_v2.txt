@@ -1,0 +1,3 @@
+This is txt file name 
+这是php程序里写的txt文件名
+これはプログラムで設定した txt　のファイル名です
