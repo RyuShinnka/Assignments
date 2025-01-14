@@ -18,16 +18,19 @@ def showInfo(classname, studentNo, name):
     print("氏名:", name)
 
 # メイン処理
-classname = input("クラスを入力してください(A,B,C)-> ")
-studentNo = int(input("学籍番号を入力してください(1001-1100)-> "))
-name = input("氏名を入力してください-> ")
-
-if (classname in ["A", "B", "C"] == False):
-    print("入力エラー")
+while True:
     classname = input("クラスを入力してください(A,B,C)-> ")
-if studentNo < 1001 or studentNo > 1100:
-    print("入力エラー")
     studentNo = int(input("学籍番号を入力してください(1001-1100)-> "))
+    name = input("氏名を入力してください-> ")
+
+    if (classname in ["A", "B", "C"] == False):
+        print("入力エラー")
+        classname = input("クラスを入力してください(A,B,C)-> ")
+    elif studentNo < 1001 or studentNo > 1100:
+        print("入力エラー")
+        studentNo = int(input("学籍番号を入力してください(1001-1100)-> "))
+    else:
+        break
 # ここまでの処理でエラーがなければ、showInfo関数に値を渡す
 showInfo(classname, studentNo, name)
 
