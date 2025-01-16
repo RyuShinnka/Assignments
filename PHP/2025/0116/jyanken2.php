@@ -27,6 +27,11 @@
                 $fp = fopen($file, "r");
                 $count = (int)fread($fp, filesize($file));
                 fclose($fp);
+            }else{
+                // ファイルを新規書き込みモードで開く
+                $fp = fopen($file, "w");
+                fputs($fp, $count);
+                fclose($fp);
             }
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $user_hand = $_POST["hand"];
