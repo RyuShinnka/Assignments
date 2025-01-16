@@ -11,7 +11,6 @@
         $c = $a / $b;
         return $c;
     }
-
     function myErrorProc($errcode, $msg, $file, $line){
         print "エラーコード：" . $errcode;
         print "<br>メッセージ：" . $msg;
@@ -19,15 +18,16 @@
         print "<br>行数：" . $line;
         die();
     }
+    
 
     set_error_handler("myErrorProc");
 
     $x = $_POST['left'];
     $y = $_POST['right'];
+
     $z = divnum($x, $y);
     print "$x ÷ $y = $z";
-    ?>
+?>
     <p><a href="reigai_error.html">戻る</a></p>
-
 </body>
 </html>

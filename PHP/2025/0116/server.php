@@ -11,7 +11,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     確認ボタンを押して $_SERVER の内容を表示してみましょう<br>
-    <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="POST" name="form1">
+    <form action="
+    <?php
+        echo $_SERVER["PHP_SELF"]; 
+    ?>" method="POST" name="form1">
         <input type="submit" name="sub1" value="確認">
     </form>
 </body>
