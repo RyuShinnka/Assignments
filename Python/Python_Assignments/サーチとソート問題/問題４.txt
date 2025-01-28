@@ -1,0 +1,46 @@
+#   入力の関数
+def inputData():
+    lst = []
+    lstLen = int(input("リストの要素数を入力ー＞"))
+    for i in range(lstLen):
+        lst.append(int(input("値を入力ー＞")))
+    return lst
+
+#   降順に並べ替え  バブルソート の関数
+def bubbleSort(lst):
+    temp = 0 # 交換用変数
+    last = len(lst) - 1 
+
+    while last > 0:
+        i = 0
+        while i < last:
+            if lst[i] < lst[i+1]:
+                temp = lst[i]
+                lst[i] = lst[i+1]
+                lst[i+1] = temp
+            i += 1
+        last -= 1
+
+#   ２分探索法　		（バイナリーサーチ） の関数
+def binary_search(arr, target):
+    idx = -1
+    low = 0
+    high = len(arr) - 1
+    while low <= high and idx == -1:
+        mid = (low + high) // 2
+        if arr[mid] == target:
+            idx = mid
+        elif arr[mid] < target:
+            low = mid + 1
+        else:
+            high = mid - 1
+
+    if idx == -1:
+        print("キーと同じ値は有りませんでした")
+    else:
+        print("キーと同じ値が見つかりました。インデックスは", idx)
+        return idx
+
+#   リストに重複した要素を削除する関数
+def remove_duplicates(lst):
+    return list(set(lst))
