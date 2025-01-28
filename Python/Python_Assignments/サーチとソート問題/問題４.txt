@@ -20,6 +20,7 @@ def bubbleSort(lst):
                 lst[i+1] = temp
             i += 1
         last -= 1
+    return lst
 
 #   ２分探索法　		（バイナリーサーチ） の関数
 def binary_search(arr, target):
