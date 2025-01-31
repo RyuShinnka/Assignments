@@ -22,8 +22,6 @@ public class section_10 {
         
         // 平均点を計算
         double avg = Student.平均を求める(配列);
-        // 順位を計算
-        配列[0].getRanks(配列);
         // 学生情報を表示
         System.out.println("\n登録された学生情報");
         Student.printInfo(配列);
