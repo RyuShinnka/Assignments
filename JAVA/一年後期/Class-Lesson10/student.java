@@ -34,21 +34,7 @@ class Student {
         return num;
     }
 
-    // インスタンスメソッド: 成績順位を計算し、順位を配列として返す
-    int[] getRanks(Student[] students) {
-        int n = students.length;
-        int[] ranks = new int[n];
-        for (int i = 0; i < n; i++) {
-            ranks[i] = 1; // 初期順位を1に設定
-            for (int j = 0; j < n; j++) {
-                if (students[j].score > students[i].score) {
-                    ranks[i]++; // 高い成績があれば順位を下げる
-                }
-            }
-            students[i].rank = ranks[i]; // 順位をフィールドに代入
-        }
-        return ranks;
-    }
+
 
     // インスタンスメソッド: 学生情報を表示
     static void printInfo(Student[] students) {
