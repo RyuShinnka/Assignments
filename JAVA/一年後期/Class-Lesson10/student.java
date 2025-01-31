@@ -18,13 +18,13 @@ class Student {
     }
 
     // クラスメソッド: 成績点の平均を求める
-    static double getAvg(Student[] students) {
+    static double 平均を求める(Student[] students) {
         avg = (double) sum / count;
         return avg;
     }
 
     // クラスメソッド: 平均点以上の人数を求める
-    static int countAvg(Student[] students) {
+    static int 平均点以上の人数を求める(Student[] students) {
         int num = 0;
         for (int i = 0; i < students.length; i++) {
             if (students[i].score >= avg) {
