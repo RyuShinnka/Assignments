@@ -30,7 +30,7 @@ def 合計平均処理(scores):
     average = total / len(scores)
     return total, average
 
-def 平均値より大きい値の数を求める関数処理(scores):
+def 平均値より大きい値の数を求める関数処理(scores, average):
     average = sum(scores) / len(scores)
     count = 0
     for score in scores:
@@ -42,7 +42,7 @@ def 平均値より大きい値の数を求める関数処理(scores):
 """メインの処理"""
 scores = 入力処理()
 result = 合計平均処理(scores)
-count = 平均値より大きい値の数を求める関数処理(scores)
+count = 平均値より大きい値の数を求める関数処理(scores, result[1])
 
 print("合計:", result[0])
 print("平均:", result[1])
