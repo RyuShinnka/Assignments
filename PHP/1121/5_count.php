@@ -1,23 +1,24 @@
 <?php
 
-$count_file = "count.txt";
-
-$count = 0;
 
 // カウントファイルが存在するかチェック
-if (file_exists($count_file)) {
+if (file_exists("count.txt")) {
     // カウントファイルを読み取りモードで開く
-    $fp = fopen($count_file, "r");
-    $count = (int)fread($fp, filesize($count_file));
-    fclose($fp);
-    $count++;
+    $fp = @fopen("count.txt", "r") or die("file Error");
+    
+    $count = fgets($fp);
+    // カウント結果を画面に表示
+    print "あなたは・・・" . $count . "番目の訪問者です。";
+    fclose($fp);// ファイルを閉じる
+    
 }
+$count++; // カウントを1増やす
 
 // カウントファイルを新規書き込みモードで開く
-$fp = fopen($count_file, "w");
-fwrite($fp, $count);
-fclose($fp);
 
-// カウント結果を画面に表示
-echo "あなたは・・・" . $count . "番目の訪問者です。";
+$fh = @fopen("count.txt", "w") or die("Error\n");
+fputs($fh, $count);   # ファイルに書き込み
+fclose($fh); # ファイルを閉じる
+
+
 ?>
