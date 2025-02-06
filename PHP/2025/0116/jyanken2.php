@@ -37,14 +37,19 @@
                 $user_hand = $_POST["hand"];
                 echo "<p>あなたの手は " . $user_hand . "<br>";
 
+                
                 // コンピューターの手をランダムで決定
                 $computer_hand = array("ぐー", "パー", "チョキ");
-                $computer_hand = $computer_hand[array_rand($computer_hand)];
+                $index = rand(0, 2);
+                $computer_hand = $computer_hand[$index];
+                
                 echo "コンピューターの手は " . $computer_hand . "<br>";
+                
+                
 
                 // 勝敗の判定
                 // userの勝の場合
-                if($user_hand == "ぐー" && $computer_hand == "パー" || $user_hand == "パー" && $computer_hand == "チョキ" || $user_hand == "チョキ" && $computer_hand == "ぐー"){
+                if($user_hand == "ぐー" && $computer_hand == "チョキ" || $user_hand == "パー" && $computer_hand == "ぐー" || $user_hand == "チョキ" && $computer_hand == "ぐー"){
                     echo "勝敗は・・・あなたの勝ち！";
                     $count++; // 勝利数を増加
                     $fh = fopen($file, "w"); // ファイルを書き込みモードで開く
@@ -58,7 +63,6 @@
                 echo "<br>現在の勝利数: " . $count . "</p>";
             } else {
                 echo "<p>あなたの手は未設定<br>コンピューターの手は未設定<br>勝敗は・・・これから<br>";
-                echo "現在の勝利数: " . $count . "</p>";
             }
         } catch (Exception $e) {
             print "キャッチされた例外: (" . $e->getMessage() . ")<br>";
