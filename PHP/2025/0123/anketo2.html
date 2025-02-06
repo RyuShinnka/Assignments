@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>アンケート</title>
+</head>
+<body>
+簡単なアンケートです。ぜひご協力ください
+<br>
+<br>
+<form action="anketo2.php" method="post">
+注: 問1、問2は必須項目です
+<br>
+<br>
+  問1、当社を見学したいと思ったのはなぜですか?
+ 
+  <label><input type="radio" name="ans1" value="0"> 有名だから<br></label>
+  <label><input type="radio" name="ans1" value="1"> 家から近いから<br></label>
+  <label><input type="radio" name="ans1" value="2"> 興味があったらから<br></label>
+  <label><input type="radio" name="ans1" value="3"> 尊敬する人がいるから<br></label>
+  <label><input type="radio" name="ans1" value="4"> その他<br></label>
+ 
+
+  問2、あなたの性別を教えてください
+  <br>
+  <select name="ans2">
+    <option value="" selected>選択してください</option>
+    <option value="0">男性</option>
+    <option value="1">女性</option>
+    <option value="2">その他</option>
+  </select>
+
+  <input type="submit" value="送信">
+ 
+</form>
+</body>
+</html>
