@@ -1,11 +1,6 @@
 import java.util.Scanner;
 
 public class chap02_02 {
-    // BMIに基づいて体型を判定するメソッド
-    public static void hantei(int bmi) {
-        
-    }
-
     public static void main(String[] args) {
         // Scannerを使用してユーザーから入力を受け取る
         Scanner s = new Scanner(System.in);
