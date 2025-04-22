@@ -1,5 +1,5 @@
 // 学生情報クラス
-class GakuseiJoho {
+class StudentCard {
     int gakusekiBangou; // 学籍番号
     String namae;       // 氏名
     int bangou;         // 自動番号
