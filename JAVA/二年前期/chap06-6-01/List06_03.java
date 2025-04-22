@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class List06_03 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        GakuseiJoho[] gakuseiList = new GakuseiJoho[3]; // 3人分
+        StudentCard[] gakuseiList = new StudentCard[3]; // 3人分
 
         for (int i = 0; i < 3; i++) {
             System.out.print((i + 1) + "人目の学籍番号を入力＝＞");
@@ -16,7 +16,7 @@ public class List06_03 {
             int seiseki = s.nextInt();
 
             // 学生情報を作成して配列に格納
-            gakuseiList[i] = new GakuseiJoho(bangou, namae, seiseki);
+            gakuseiList[i] = new StudentCard(bangou, namae, seiseki);
             gakuseiList[i].goukeiNiKasaneru();
         }
 
@@ -28,7 +28,7 @@ public class List06_03 {
         }
 
         // 合計表示
-        System.out.println("三人の成績点の合計は：" + GakuseiJoho.seisekiGoukei);
+        System.out.println("三人の成績点の合計は：" + StudentCard.seisekiGoukei);
 
         s.close();
     }
