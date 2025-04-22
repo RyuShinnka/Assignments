@@ -12,7 +12,7 @@ class StudentCard {
         this.gakusekiBangou = gakusekiBangou;
         this.namae = namae;
         this.seiseki = seiseki;
-        this.bangou = GakuseiJoho.bangouCount++;
+        this.bangou = StudentCard.bangouCount++;
     }
 
     // 学生情報を表示するメソッド
@@ -25,6 +25,6 @@ class StudentCard {
 
     // 成績点を合計に加えるメソッド
     void goukeiNiKasaneru() {
-        GakuseiJoho.seisekiGoukei += this.seiseki;
+        StudentCard.seisekiGoukei += this.seiseki;
     }
 }
