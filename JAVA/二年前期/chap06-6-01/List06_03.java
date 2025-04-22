@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class GakuseiMain {
+public class List06_03 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         GakuseiJoho[] gakuseiList = new GakuseiJoho[3]; // 3人分
