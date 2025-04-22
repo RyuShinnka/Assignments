@@ -8,7 +8,7 @@ class StudentCard {
     static int seisekiGoukei = 0; // 成績点の合計
 
     // コンストラクタ
-    GakuseiJoho(int gakusekiBangou, String namae, int seiseki) {
+    StudentCard(int gakusekiBangou, String namae, int seiseki) {
         this.gakusekiBangou = gakusekiBangou;
         this.namae = namae;
         this.seiseki = seiseki;
