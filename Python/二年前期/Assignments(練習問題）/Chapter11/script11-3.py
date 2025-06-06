@@ -1,0 +1,5 @@
+print("students.txtの内容をリストに格納します")
+f = open("students.txt", encoding="utf-8")
+lines = f.readlines()
+print(lines)
+f.close()
