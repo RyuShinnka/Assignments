@@ -1,0 +1,3 @@
+interface Area {
+	double getArea();
+}
