@@ -10,9 +10,9 @@ def clicked(event, s):
     if s == '専攻':
         event.widget['text'] = 'AIエンジニア専攻'
     if s == '学籍番号':
-        event.widget['text'] = '学籍番号：24161012'
+        event.widget['text'] = '学籍番号：2416xxxx'
     if s == '生徒名':
-        event.widget['text'] = '生徒名：リュウ　シンカ'
+        event.widget['text'] = '生徒名：リxx　xxx'
 
 # ウィンドウを作成
 root = tk.Tk()
