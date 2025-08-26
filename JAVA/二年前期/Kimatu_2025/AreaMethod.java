@@ -1,0 +1,3 @@
+interface AreaMethod {
+	double getArea();
+}
