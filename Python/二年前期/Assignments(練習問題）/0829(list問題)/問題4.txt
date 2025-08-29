@@ -1,0 +1,86 @@
+"""
+関数
+"""
+
+# バブルソート関数(降順)
+def bubble_sort(lst):
+    n = len(lst)
+    for i in range(n):
+        for j in range(n-i-1):
+            if lst[j] < lst[j+1]:
+                lst[j], lst[j+1] = lst[j+1], lst[j]
+    return lst
+
+# リストの作成関数
+
+def create_lst(n):
+    lst = []
+    for i in range(n):
+        lst.append(int(input("値を入力->")))
+    return lst
+
+# List1から検索値を２分探索で検索する。
+# キーと同じ値が見つかったそのインデックスを表示する
+# 見つからなかったら「キーと同じ値は有りませんでした」と表示する
+def binary_search(lst, key):
+    low = 0
+    high = len(lst) - 1
+    while low <= high:
+        mid = (low + high) // 2
+        if lst[mid] == key:
+            return mid
+        elif lst[mid] < key:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return "キーと同じ値は有りませんでした"
+
+
+# Lst3とTBLの一つのTBL2に代入していきます。
+# TBL2をセット関数で同じ値が内容にします。
+# TBL2を表示
+def set_TBL2(lst3, TBL):
+    TBL2 = lst3 + TBL
+    TBL2 = list(set(TBL2))
+    return TBL2
+
+"""
+メイン
+"""
+
+# 問題１
+# リストの作成
+n = int(input("要素数を入力->"))
+lst = create_lst(n)
+
+# バブルソート
+sorted_lst = bubble_sort(lst)
+
+# 結果の表示
+print("ソート結果:", sorted_lst)
+
+# 問題２
+List1 = [10,25,50,65,77,85,100,105,110,130,155,160]
+
+search_key = int(input("検索する値を入力->"))
+
+result = binary_search(List1, search_key)
+
+if result != "キーと同じ値は有りませんでした":
+    print("見つかったインデックス:", result)
+else:
+    print(result)
+
+# 問題３
+
+# リストの作成
+n = int(input("要素数を入力->"))
+lst3 = create_lst(n)
+
+TBL = [15,23,58,64,10,45,35,15,10,64]
+
+# TBL2の作成
+TBL2 = set_TBL2(lst3, TBL)
+
+# TBL2の表示
+print("TBL2:", TBL2)
