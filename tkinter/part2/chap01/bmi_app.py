@@ -2,11 +2,11 @@ import tkinter  as tk
 
 # BMI計算関数
 def calc(weight, height):
-    return weight / (height ** 2)
+    return weight / ((height /100) ** 2)
 
 # BMI判定関数
 def check(bmi):
-    if bmi < 18.5 :return '低体重'
+    if bmi < 18.5:return '低体重'
     elif bmi < 25.0: return '普通体重'
     elif bmi < 30.0: return '肥満度1'
     elif bmi < 35.0: return '肥満度2'
