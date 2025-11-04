@@ -1,0 +1,32 @@
+5.1
+⑴　マップ
+⑵　リスト
+⑶　セット
+
+5.2
+⑴　LinkedList
+⑵　LinkedList
+⑶　ArrayList
+
+5.3
+⑴　
+for(String str: list){
+    System.out.println(str);
+}
+
+⑵　
+Iterator<String> it = list.iterator();
+while(it.hasNext()){
+    System.out.println(it.next());
+}
+
+5.4
+class Book implements Comparable<Book>{
+    String title;
+    String author;
+    int price;
+
+    public int comparaTo(Book b){
+        return this.price - b.price;
+    }
+}
