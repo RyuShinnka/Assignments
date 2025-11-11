@@ -6,5 +6,7 @@ public class List06_04 {
 				System.out.println("こんにちは");
 			}
 		});
+//		ラムダ式を使うと次の1行を記述するだけで済みます。
+//		Greeting.greet( () -> {System.out.println("こんにちは");});
 	}
 }
