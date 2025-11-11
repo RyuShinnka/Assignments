@@ -28,9 +28,15 @@ public class List06_06 {
 			p.x *= 2;
 			p.y *= 2;
 		}
+//ラムダ式
+//	(Point p) -> {p.x *=2; p.y *=2;}
+//		省略表現： p -> {p.x *=2; p.y *=2;}
+		
 		for (Point p : pointList) {
-//			出力
 			p.printInfo();
 		}
+//ラムダ式
+//		(Point p) -> { p.printInfo();}
+//		省略表現： p -> { p.printInfo();}
 	}
 }
