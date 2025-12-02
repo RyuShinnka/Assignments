@@ -11,6 +11,10 @@ public class FlowLayoutExample  extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 //		コンポーネントのレイアウト方法をフローレイアウトに変更します
 		getContentPane().setLayout(new FlowLayout());
+//		ボックスレイアウト
+//		getContentPane().setLayout(new BoxLayout(getContentPane(), BoxLayout.Y_AXIS));
+//	    グリッドレイアウト
+//		getContentPane().setLayout(new GridLayout(2, 3));
 		getContentPane().add(new JButton("1 January"));
 		getContentPane().add(new JButton("2 February"));
 		getContentPane().add(new JButton("3 March"));
