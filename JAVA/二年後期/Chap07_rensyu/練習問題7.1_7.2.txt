@@ -1,0 +1,8 @@
+7.1
+⑴　✖
+⑵　〇
+⑶　✖
+
+7.2
+Double.parseDouble(str)
+
